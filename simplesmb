@@ -1,0 +1,47 @@
+#!bin/bash
+#Use root user pls
+apt update
+apt install -y samba
+#For comprobations if needed
+#whereis samba
+#The answer must be: 
+#samba: /usr/sbin/samba /usr/lib/samba /etc/samba /usr/share/samba /usr/share/man/man7/samba.7.gz /usr/share/man/man8/samba.8.gz
+addgroup --force-badname Sistemas
+addgroup --force-badname Financiero
+addgroup --force-badname RRHH
+addgroup --force-badname Programadores
+useradd --no-create-home --no-user-group -r --uid 10010 -p Pass1 -g Sistemas -G Financiero,Programadores,RRHH MariaRodGal
+useradd --no-create-home --no-user-group -r --uid 10011 -p Pass1 -g Sistemas -G Financiero,Programadores,RRHH HectorBlanCo
+useradd --no-create-home --no-user-group -r --uid 10012 -p Pass1 -g Financiero CarolOrEs
+useradd --no-create-home --no-user-group -r --uid 10013 -p Pass1 -g Financiero SandraTeFi
+useradd --no-create-home --no-user-group -r --uid 10014 -p Pass1 -g Programadores PaquiLiCo
+useradd --no-create-home --no-user-group -r --uid 10015 -p Pass1 -g Programadores CainPerTe
+useradd --no-create-home --no-user-group -r --uid 10016 -p Pass1 -g RRHH MonchoRonLo
+useradd --no-create-home --no-user-group -r --uid 10017 -p Pass1 -g RRHH RaulPerLo
+
+mkdir /hassio /hassio/Financiero /hassio/Sistemas /hassio/Programadores /hassio/RRHH
+chgrp -R --no-preserve-root Sistemas /hassio
+chmod -R 777 /hassio
+chmod -R 770 /hassio/Sistemas
+chgrp -R Financiero /hassio/Financiero
+chmod 770 /hassio/Financiero
+chgrp -R Programadores /hassio/Programadores
+chmod 770 /hassio/Programadores
+chgrp -R RRHH /hassio/RRHH
+chmod 770 /hassio/RRHH
+
+cat smbconf >> /etc/samba/smb.cnf
+
+service smbd restart
+
+pass=Pass1
+(echo "$pass";echo "$pass") | smbpasswd -a MariaRodGal
+(echo "$pass";echo "$pass") | smbpasswd -a HectorBlanCo
+(echo "$pass";echo "$pass") | smbpasswd -a SandraTeFi
+(echo "$pass";echo "$pass") | smbpasswd -a CarolOrEs
+(echo "$pass";echo "$pass") | smbpasswd -a CainPerTe
+(echo "$pass";echo "$pass") | smbpasswd -a PaquiLiCo
+(echo "$pass";echo "$pass") | smbpasswd -a MonchoRonLo
+(echo "$pass";echo "$pass") | smbpasswd -a RaulPerLo
+
+# ¿Fin?
