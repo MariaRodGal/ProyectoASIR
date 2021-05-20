@@ -1,8 +1,8 @@
 apt update
-apt install git
+apt install -y git
 mkdir ~/repo
 cd ~/repo
 git config --global user.name "MariaRodGal"
 git config --global user.email "mariarodgallego@gmail.com"
-git remote add origin https://github.com/MariaRodGal/ProyectoASIR.git
-git clone origin master
+git init
+git clone https://github.com/MariaRodGal/ProyectoASIR.git
