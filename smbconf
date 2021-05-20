@@ -1,0 +1,5 @@
+[hassio]
+    comment = Samba on Ubuntu
+    path = /hassio
+    read only = no
+    browsable = yes
