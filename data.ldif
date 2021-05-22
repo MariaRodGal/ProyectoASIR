@@ -1,0 +1,361 @@
+dn: dc=hassio,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: hassio
+dc: hassio
+structuralObjectClass: organization
+entryUUID: 0db61c0e-36d7-103b-8658-ab8fb3b07f80
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210421102117Z
+entryCSN: 20210421102117.683513Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210421102117Z
+
+dn: cn=admin,dc=hassio,dc=com
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword:: e1NTSEF9NXJIcVN5YmNYN0pUdGk5SFMvKzVrQmtNelFMM0pXbkE=
+structuralObjectClass: organizationalRole
+entryUUID: 0db6dcac-36d7-103b-8659-ab8fb3b07f80
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210421102117Z
+entryCSN: 20210421102117.688503Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210421102117Z
+
+dn: dc=seguridad,dc=hassio,dc=com
+objectClass: domain
+objectClass: top
+structuralObjectClass: domain
+entryUUID: 9c557290-3ee1-103b-9669-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501155701Z
+dc: seguridad
+entryCSN: 20210501162312.556116Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162312Z
+
+dn: ou=users,dc=seguridad,dc=hassio,dc=com
+ou: users
+objectClass: organizationalUnit
+objectClass: top
+structuralObjectClass: organizationalUnit
+entryUUID: ba96e68a-3ee1-103b-966a-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501155751Z
+entryCSN: 20210501155751.994392Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501155751Z
+
+dn: ou=sistemas,dc=seguridad,dc=hassio,dc=com
+objectClass: organizationalUnit
+objectClass: top
+structuralObjectClass: organizationalUnit
+entryUUID: cc94fa7a-3ee1-103b-966b-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501155822Z
+ou: sistemas
+entryCSN: 20210501155918.600830Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501155918Z
+
+dn: ou=programadores,dc=seguridad,dc=hassio,dc=com
+ou: programadores
+objectClass: organizationalUnit
+objectClass: top
+structuralObjectClass: organizationalUnit
+entryUUID: e6adf916-3ee1-103b-966c-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501155905Z
+entryCSN: 20210501155905.965344Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501155905Z
+
+dn: ou=RRHH,dc=seguridad,dc=hassio,dc=com
+ou: RRHH
+objectClass: organizationalUnit
+objectClass: top
+structuralObjectClass: organizationalUnit
+entryUUID: ff4e86d4-3ee1-103b-966d-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501155947Z
+entryCSN: 20210501155947.282866Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501155947Z
+
+dn: ou=financiero,dc=seguridad,dc=hassio,dc=com
+ou: financiero
+objectClass: organizationalUnit
+objectClass: top
+structuralObjectClass: organizationalUnit
+entryUUID: 112615b6-3ee2-103b-966e-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501160017Z
+entryCSN: 20210501160017.216814Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501160017Z
+
+dn: uid=MariaRodGal,ou=users,dc=seguridad,dc=hassio,dc=com
+cn:: TWFyw61hIFJvZHLDrWd1ZXo=
+sn:: Um9kcsOtZ3Vleg==
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: e0966020-3ee3-103b-9672-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161314Z
+uid: MariaRodGal
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506160818.295659Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506160818Z
+
+dn: uid=RaulPerLo,ou=users,dc=seguridad,dc=hassio,dc=com
+uid: RaulPerLo
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 2136910e-3ee4-103b-9674-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161503Z
+cn: Raul Perez
+sn: Lopez
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163826.235902Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163826Z
+
+dn: uid=MariaRodGal,ou=sistemas,dc=seguridad,dc=hassio,dc=com
+uid: MariaRodGal
+cn:: TWFyw61hIFJvZHLDrWd1ZXo=
+sn:: Um9kcsOtZ3Vleg==
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 498bfcf2-3ee4-103b-9676-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161610Z
+entryCSN: 20210501162547.391602Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162547Z
+
+dn: uid=RaulPerLo,ou=RRHH,dc=seguridad,dc=hassio,dc=com
+uid: RaulPerLo
+cn: Raul Perez
+sn: Lopez
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 4faee8d8-3ee4-103b-9677-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161621Z
+entryCSN: 20210501162558.157454Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162558Z
+
+dn: uid=CarolOrEs,ou=users,dc=seguridad,dc=hassio,dc=com
+uid: CarolOrEs
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 634917d8-3ee4-103b-9679-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161654Z
+cn: Carol Orlando
+sn: Orlando
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163733.268339Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163733Z
+
+dn: uid=CarolOrEs,ou=financiero,dc=seguridad,dc=hassio,dc=com
+uid: CarolOrEs
+cn: Carol Orlando
+sn: Orlando
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 74572dc6-3ee4-103b-967a-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161722Z
+entryCSN: 20210501162625.739685Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162625Z
+
+dn: uid=MonchoRonLo,ou=users,dc=seguridad,dc=hassio,dc=com
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 8850ccec-3ee4-103b-967c-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161756Z
+cn: Moncho Ron
+sn: Ron
+uid: MonchoRonLo
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163801.143541Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163801Z
+
+dn: uid=PaquiLiCo,ou=users,dc=seguridad,dc=hassio,dc=com
+uid: PaquiLiCo
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 9be2f37a-3ee4-103b-967e-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161828Z
+cn: Paqui Licores
+sn: Licores
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163817.502292Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163817Z
+
+dn: uid=SandraTeFi,ou=users,dc=seguridad,dc=hassio,dc=com
+uid: SandraTeFi
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: a8a6a912-3ee4-103b-9680-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161850Z
+cn: Sandra Tequila
+sn: Tequila
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163834.443009Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163834Z
+
+dn: uid=CainPerTe,ou=users,dc=seguridad,dc=hassio,dc=com
+uid: CainPerTe
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: b96f4ace-3ee4-103b-9682-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161918Z
+cn: Cain Perez
+sn: Perez
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163718.973557Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163718Z
+
+dn: uid=HectorBlanCo,ou=users,dc=seguridad,dc=hassio,dc=com
+uid: HectorBlanCo
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: c9a70800-3ee4-103b-9684-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501161945Z
+cn: Hector Blanco
+sn: Blanco
+userPassword:: e01ENX1uK0JmYklseFc2S3VwYTJIYlZ3N2x3PT0=
+entryCSN: 20210506163742.494322Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506163742Z
+
+dn: uid=HectorBlanCo,ou=sistemas,dc=seguridad,dc=hassio,dc=com
+uid: HectorBlanCo
+cn: Hector Blanco
+sn: Blanco
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 17bd9ad6-3ee5-103b-9685-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501162156Z
+entryCSN: 20210501162552.654250Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162552Z
+
+dn: uid=CainPerTe,ou=programadores,dc=seguridad,dc=hassio,dc=com
+uid: CainPerTe
+cn: Cain Perez
+sn: Perez
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 1dc42756-3ee5-103b-9686-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501162206Z
+entryCSN: 20210501162612.355105Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162612Z
+
+dn: uid=MonchoRonLo,ou=RRHH,dc=seguridad,dc=hassio,dc=com
+uid: MonchoRonLo
+cn: Moncho Ron
+sn: Ron
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 290aa284-3ee5-103b-9687-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501162225Z
+entryCSN: 20210501162602.830768Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162602Z
+
+dn: uid=PaquiLiCo,ou=programadores,dc=seguridad,dc=hassio,dc=com
+uid: PaquiLiCo
+cn: Paqui Licores
+sn: Licores
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 315926a4-3ee5-103b-9688-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501162239Z
+entryCSN: 20210501162607.408045Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162607Z
+
+dn: uid=SandraTeFi,ou=financiero,dc=seguridad,dc=hassio,dc=com
+uid: SandraTeFi
+cn: Sandra Tequila
+sn: Tequila
+objectClass: shadowAccount
+objectClass: top
+objectClass: person
+structuralObjectClass: person
+entryUUID: 39484304-3ee5-103b-9689-498bbf42f741
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210501162253Z
+entryCSN: 20210501162620.522954Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210501162620Z
+
+dn: cn=VPN,ou=users,dc=seguridad,dc=hassio,dc=com
+gidNumber: 0
+cn: VPN
+objectClass: posixGroup
+objectClass: top
+structuralObjectClass: posixGroup
+entryUUID: d3a04dfc-42d2-103b-95cf-cfe9fdd8599a
+creatorsName: cn=admin,dc=hassio,dc=com
+createTimestamp: 20210506162116Z
+entryCSN: 20210506162116.199200Z#000000#000#000000
+modifiersName: cn=admin,dc=hassio,dc=com
+modifyTimestamp: 20210506162116Z
+
