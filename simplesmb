@@ -30,7 +30,7 @@ chmod 770 /hassio/Programadores
 chgrp -R RRHH /hassio/RRHH
 chmod 770 /hassio/RRHH
 
-cat smbconf >> /etc/samba/smb.cnf
+cat smbconf >> /etc/samba/smb.conf
 
 service smbd restart
 
