@@ -7,4 +7,4 @@ mkdir ~/hassioweb
 cp -r ~/repo/ProyectoASIR/web/* ~/hassioweb
 
 #Levantar container de docker
-docker run -dit --name hassio-web -p 8080:80 -v $HOME/hassioweb/:/usr/local/apache2/htdocs/ httpd:2.4
+docker run -dit --name hassio-web -p 8080:80 --restart always -v $HOME/hassioweb/:/usr/local/apache2/htdocs/ httpd:2.4
