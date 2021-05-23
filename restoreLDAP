@@ -1,0 +1,18 @@
+#https://www.openldap.org/lists/openldap-technical/201010/msg00234.html
+#https://www.openldap.org/lists/openldap-technical/201112/msg00032.html
+
+#Server Viejo:
+systemctl stop slapd
+tar -pczf compressed.tar.gz /etc/ldap/ /var/lib/ldap/
+slapcat -n 0 > backup/config.ldif
+slapcat -n 1 > backup/users.ldif
+
+#Server Nuevo:
+systemctl stop slapd
+# Restaurar /etc/ldap/ /var/lib/ldap/
+# Borrar  /etc/ldap/slapd.d/*
+slapadd -F /etc/ldap/slapd.d -n 0 -l config.ldif
+slapadd -n 1 -l users.ldif
+chown -R openldap:openldap /etc/ldap
+chown -R openldap:openldap /var/lib/ldap
+systemctl start slapd
